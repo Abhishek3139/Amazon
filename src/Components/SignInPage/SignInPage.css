@@ -1,0 +1,102 @@
+.signInLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.signInLogo img {
+  width: 103px;
+  height: 31px;
+}
+.signInBox {
+  width: 314px;
+  height: 360px;
+  border: 1px #ddd solid;
+  padding: 20px 26px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.signInBox h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #111111;
+}
+.signInBox p {
+  font-weight: 700;
+  margin: 0px 0px 4px 0px;
+}
+.signInBox input {
+  width: 296px;
+  height: 31px;
+  padding: 3px 7px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+  outline: 0;
+}
+.signInBox button {
+  width: 313px;
+  height: 29px;
+  margin-bottom: 20px;
+  background-color: #f4d381;
+  color: black;
+  border-radius: 3px;
+  /* border: none; */
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+.signInBox span {
+  font-size: 14px;
+}
+.signInBox a {
+  text-decoration: none;
+  color: #0066c0;
+  /* margin-bottom: 20px; */
+}
+.lastlink {
+  margin-top: 20px;
+}
+#arrow {
+  color: #555;
+  font-size: 12px;
+}
+.createId {
+  width: 367px;
+  height: 29px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+  margin-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: #0066c0;
+  font-size: 11px;
+  text-align: center;
+}
+.footer p {
+  font-size: 11px;
+  color: #555;
+}
+.hrline {
+  display: flex;
+  margin-bottom: 10px;
+  align-self: auto;
+  flex-direction: row;
+  align-self: normal;
+  width: 367px;
+  margin: auto;
+
+  padding-left: 0%;
+}
+#line {
+  width: 32.3%;
+  margin: 8px 0px 0px 0px;
+  /* border: navajowhite; */
+  height: 0px;
+}

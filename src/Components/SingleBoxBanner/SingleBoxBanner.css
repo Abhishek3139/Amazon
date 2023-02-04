@@ -1,0 +1,34 @@
+.singleBox {
+  /* border: 1px solid black; */
+  border: 1px solid white;
+  height: 440px;
+  width: 350px;
+  margin: 15px 0px 15px 18px;
+  display: inline-block;
+  background-color: white;
+  /* background-color: white; */
+}
+
+.singleBox h2 {
+  margin: 10px 12px 10px 12px;
+  font-size: 21px;
+}
+
+.singleBox img {
+  width: 320px;
+  height: 285px;
+  margin: 0px 15px 15px 15px;
+  object-fit: contain;
+}
+
+.singleBox a {
+  text-decoration: none;
+  color: #007185;
+  margin: 0px 0px 0px 15px;
+  margin-top: 15px;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c7511f;
+}

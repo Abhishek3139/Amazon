@@ -1,0 +1,15 @@
+@font-face {
+  font-family: AmazonEmber-RG;
+  src: url("D:\vs\html css\amazon\AmazonEmber_Rg.ttf");
+}
+* {
+  font-family: AmazonEmber-RG, Arial, sans-serif;
+}
+
+.primary {
+  color: #ffffff;
+}
+
+.secondary {
+  color: #f5f5f5;
+}

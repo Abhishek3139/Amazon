@@ -1,0 +1,76 @@
+.flexbox {
+  /* display: inline-block; */
+  position: absolute;
+  top: 364px;
+  border: none;
+  width: 99%;
+  /* border: 1px solid black; */
+  height: 280vh;
+  background-color: #eaeded;
+  background-image: url("D:\vs\React\amazon\public\img\b4.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    180deg,
+    hsl(207deg 100% 55%) 0%,
+    hsl(204deg 100% 53%) 4%,
+    hsl(203deg 99% 54%) 7%,
+    hsl(202deg 97% 56%) 11%,
+    hsl(201deg 95% 58%) 14%,
+    hsl(201deg 92% 61%) 17%,
+    hsl(200deg 89% 63%) 20%,
+    hsl(199deg 85% 66%) 23%,
+    hsl(198deg 81% 68%) 25%,
+    hsl(197deg 76% 71%) 28%,
+    hsl(196deg 71% 73%) 30%,
+    hsl(194deg 65% 75%) 31%,
+    hsl(192deg 59% 78%) 33%,
+    hsl(190deg 53% 81%) 34%,
+    hsl(188deg 45% 83%) 35%,
+    hsl(186deg 36% 86%) 36%,
+    hsl(183deg 25% 89%) 38%,
+    hsl(180deg 8% 92%) 44%
+  );
+}
+/* .subbox1 {
+  border: 2px solid red;
+  margin-top: 250px;
+  background-color: #eaeded;
+} */
+
+/* .subbox2 {
+  border: 2px solid blue;
+} */
+#nextImg {
+  font-size: 61px;
+  position: absolute;
+  left: 1423px;
+  top: 215px;
+}
+/* .Hoodies_Items {
+  width: 100%;
+  height: 613px;
+  border: 1px solid white;
+  margin-top: 40px;
+}
+.hoodies_all_items {
+  width: 97.3%;
+  height: 573px;
+  margin-top: 40px;
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.hoodies_data {
+  border-bottom: 1px solid #ddd;
+  height: 390px;
+  padding: 0 10px;
+}
+#main_header {
+  font-size: 18px;
+}
+#main_header span {
+  float: right;
+  font-size: 14px;
+  font-weight: 100;
+} */

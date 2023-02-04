@@ -1,0 +1,49 @@
+.review_container {
+  /* border: 1px solid black; */
+  width: 680px;
+  height: 200px;
+  font-size: 14px;
+  margin: 50px;
+}
+#user-icon {
+  font-size: 34px;
+  margin-right: 10px;
+}
+.review_container p {
+  margin: 5px 0px;
+  color: #565959;
+}
+.user_profile {
+  /* border: 1px solid black; */
+  height: 34px;
+  margin-bottom: 4px;
+  display: flex;
+}
+.user_profile h3 {
+  margin: 10px;
+  font-size: 13px;
+}
+
+#margin-left {
+  margin: 8px 0px 0px 10px;
+}
+
+.review_container button {
+  width: 98px;
+  height: 29px;
+  padding: 1px 6px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.review_container a {
+  margin-left: 10px;
+  color: #565959;
+}
+
+#oriange-text {
+  color: #c45500;
+  font-size: 12px;
+  font-weight: 700;
+}

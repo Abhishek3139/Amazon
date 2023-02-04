@@ -1,0 +1,77 @@
+.signIn {
+  /* border: 1px solid blue; */
+  /* background-color: white; */
+  height: 440px;
+  width: 350px;
+  margin: 15px 0px 15px 18px;
+  display: inline-block;
+}
+.img2 {
+  /* border: 1px solid white; */
+  height: 440px;
+  width: 350px;
+  /* margin: 15px; */
+  /* background-color: white; */
+}
+
+.img2 h2 {
+  margin: 0px 20px 20px 20px;
+  font-size: 21px;
+  padding: 15px 0px 0px 0px;
+}
+
+.img2 button {
+  border: none;
+  background-color: #ffd811;
+  height: 29px;
+  width: 308px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.img2 img {
+  height: 0px;
+  width: 0px;
+  object-fit: cover;
+}
+
+.one {
+  height: 137px;
+  width: 348px;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+.two {
+  height: 290px;
+  width: 293px;
+  background-color: white;
+  /* border: 1px solid green; */
+  margin-top: 10px;
+  /* margin-left: 13px; */
+  margin: 10px 15px 15px 28px;
+}
+.two p {
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+#mob {
+  height: 197px;
+  width: 240px;
+  margin-left: 30px;
+}
+#staricon1 {
+  color: orange;
+  margin-left: 9px;
+}
+#staricon {
+  color: orange;
+}
+.two sup {
+  margin: 5px;
+}
+#price {
+  font-size: 20px;
+  color: #840404;
+}
