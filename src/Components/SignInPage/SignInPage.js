@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { focusContext } from "../../context";
 
 export default function SignInpage() {
-  const { input, handleChange, handleSubmit } = useContext(focusContext);
+  const { input, handleChange, handleSubmit, error } = useContext(focusContext);
   return (
     <div className="signInLogo">
       <Link to="/">
@@ -21,6 +21,8 @@ export default function SignInpage() {
             name="email"
             value={input.email}
           />
+          {error.email && <span className="error">{error.email}</span>}
+
           <p>Password</p>
           <input
             type="password"
@@ -28,6 +30,8 @@ export default function SignInpage() {
             name="password"
             value={input.password}
           />
+          {error.password && <span className="error">{error.password}</span>}
+
           <button>Continue</button>
         </form>
         <br />

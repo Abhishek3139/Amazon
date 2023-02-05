@@ -31,7 +31,7 @@
   width: 296px;
   height: 31px;
   padding: 3px 7px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 3px;
   border: 1px solid #a6a6a6;
   border-top-color: #949494;
@@ -99,4 +99,7 @@
   margin: 8px 0px 0px 0px;
   /* border: navajowhite; */
   height: 0px;
+}
+.error {
+  color: red;
 }

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { focusContext } from "../../context";
 
 export default function CreateAccount() {
-  const { input, handleChange, handleSubmit } = useContext(focusContext);
+  const { input, handleChange, handleSubmit, error } = useContext(focusContext);
   return (
     <div className="signInLogo">
       <Link to="/">
@@ -22,20 +22,26 @@ export default function CreateAccount() {
             name="name"
             onChange={handleChange}
           />
+          {error.name && <span className="error">{error.name}</span>}
+
           <p>Mobile number</p>
           <input
-            type="number"
+            type="text"
             value={input.number}
             name="number"
             onChange={handleChange}
           />
-          <p>Email (optional)</p>
+          {error.number && <span className="error">{error.number}</span>}
+
+          <p>Email</p>
           <input
-            type="email"
+            type="text"
             value={input.email}
             name="email"
             onChange={handleChange}
           />
+          {error.email && <span className="error">{error.email}</span>}
+
           <p>Password</p>
           <input
             type="password"
@@ -44,6 +50,8 @@ export default function CreateAccount() {
             min="6"
             onChange={handleChange}
           />
+          {error.password && <span className="error">{error.password}</span>}
+
           <button type="submit">Continue</button>
         </form>
         <br />

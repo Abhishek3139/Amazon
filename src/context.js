@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
-import { auth } from "./firebase-Config";
 import { createContext } from "react";
 // import { reducer } from "./reducer";
 
@@ -17,7 +12,38 @@ const AppProvider = ({ children }) => {
     email: "",
     password: "",
   });
-  const [inputData, setInputData] = useState([]);
+  const validName = /^[A-Za-z]+$/;
+  const validEmail = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm;
+  const validNumber = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+  const validPassword =
+    /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+  const [error, setError] = useState({});
+
+  const validator = (values) => {
+    let error = {};
+    if (!values.name) {
+      error.name = "Name is required";
+    } else if (!values.name.match(validName)) {
+      error.name = "please enter a valid name";
+    }
+    if (!values.email) {
+      error.email = "email is required";
+    } else if (!values.email.match(validEmail)) {
+      error.email = "please enter a valid email";
+    }
+    if (!values.number) {
+      error.number = "number is required";
+    } else if (!values.number.match(validNumber)) {
+      error.number = "please enter a valid number";
+    }
+    if (!values.password) {
+      error.password = "password is required";
+    } else if (!values.password.match(validPassword)) {
+      error.password = "please enter a valid password";
+    }
+    return error;
+  };
 
   function focusOnInput() {
     setFocus(true);
@@ -25,36 +51,6 @@ const AppProvider = ({ children }) => {
   function focusOutOnInput() {
     setFocus(false);
   }
-
-  // --------------------------Authentication code-------------------------------
-
-  const createAccount = async () => {
-    try {
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        input.name,
-        input.number,
-        input.email,
-        input.password
-      );
-      console.log(user);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  const logIn = async () => {
-    try {
-      const user = await signInWithEmailAndPassword(
-        auth,
-        input.email,
-        input.password
-      );
-      console.log(user);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -65,11 +61,9 @@ const AppProvider = ({ children }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInputData(input);
-    console.log(inputData);
-    createAccount();
-    logIn();
-    setInput({ email: " ", password: " " });
+    setError(validator(input));
+    console.log(error);
+    // setInput({ email: " ", password: " " });
   };
 
   // -----------------------------------------------------------------------------
@@ -82,6 +76,7 @@ const AppProvider = ({ children }) => {
         input: [input, setInput],
         handleChange: handleChange,
         handleSubmit: handleSubmit,
+        error,
       }}
     >
       {children}
